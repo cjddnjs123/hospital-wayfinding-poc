@@ -1,0 +1,5 @@
+FITSOFT independent proof-of-concept demo. NOT a hospital-operated service.
+All routes/distances/photos are illustrative, not hospital ground truth.
+Hallway photos corridor-1/2/3: W.carter, CC0, Wikimedia Commons.
+Photo bright-corridor: Unsplash reference photo, not Ewha Hospital.
+8th Wall XR Engine Copyright (c) 2026 Niantic Spatial, Inc.; license: external/xr/LICENSE; see https://github.com/8thwall/engine/blob/main/LICENSE.
