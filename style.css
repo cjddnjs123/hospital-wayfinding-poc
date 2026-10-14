@@ -94,3 +94,5 @@
 .loc-page .room{height:21%}
 .loc-page .mapline{height:18%}
 .loc-page .loc-card strong{font-size:16px;line-height:1.3}
+/* FIT-549 13차: direction drawn on the floor inside each step photo */
+.step-arr{position:absolute;inset:0;width:100%;height:100%;left:0;right:auto;bottom:auto;transform:none;background:none;box-shadow:none;border-radius:10px;filter:drop-shadow(0 0 3px rgba(0,40,40,.85)) drop-shadow(0 0 6px rgba(45,238,217,.55));pointer-events:none}
