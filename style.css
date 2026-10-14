@@ -27,3 +27,10 @@
 .ar-viewfinder .ar-placeholder{background-size:cover;background-position:center}
 .ar-viewfinder .ar-projected{bottom:6%;height:52%;width:62%}
 .ar-top{background:linear-gradient(rgba(6,16,23,.55),rgba(6,16,23,0));padding-bottom:10px}
+
+/* FIT-549 fullscreen AR (approved mockups 4/5): camera covers the whole screen; guidance overlays sit on top. */
+.ar-viewfinder .ar-projected{bottom:calc(var(--ar-panel,180px) + 4%);height:38%;width:58%}
+.ar-direction{background:rgba(32,32,32,.82);color:#fff;backdrop-filter:blur(2px)}
+.ar-direction .arr{color:#fff}.ar-direction small{color:#e6e6e6}
+.ar-panel{background:linear-gradient(transparent,rgba(6,16,23,.55) 30%,rgba(6,16,23,.82))}
+.ar-bar button,.ar-pill{background:rgba(32,32,32,.6)}
