@@ -106,3 +106,4 @@
 .route-page .rt-tx small{font-size:11px}
 .step-ph,.step-ph img,.route-page .step img{height:76px}
 .ar-guide::before{content:''}.ar-guide[data-tone=go]::before{content:'⬆︎ '}.ar-guide[data-tone=warn]::before{content:'⚠︎ '}
+.ar-credit{font-size:10px;color:#ffffffa6;line-height:1.3}.ar-credit a{color:#bff3ec}
