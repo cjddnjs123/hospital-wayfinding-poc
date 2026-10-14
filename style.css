@@ -20,3 +20,10 @@
 .ar-screen .camera-start{z-index:8}
 /* FIT-549 diagnostics (only with ?debug=1) */
 .ar-diag{position:absolute;left:4px;right:4px;bottom:4px;z-index:9;margin:0;padding:6px;border-radius:8px;background:rgba(0,0,0,.72);color:#9ff;font:10px/1.3 monospace;white-space:pre-wrap;pointer-events:none}
+
+/* FIT-549 full-bleed AR: camera fills the screen above the bottom panel, as in the approved mockups. */
+.ar-viewfinder{left:0;top:0;transform:none;width:100%;border-radius:0;border:0}
+.ar-viewfinder .ar-video{object-fit:cover}
+.ar-viewfinder .ar-placeholder{background-size:cover;background-position:center}
+.ar-viewfinder .ar-projected{bottom:6%;height:52%;width:62%}
+.ar-top{background:linear-gradient(rgba(6,16,23,.55),rgba(6,16,23,0));padding-bottom:10px}
