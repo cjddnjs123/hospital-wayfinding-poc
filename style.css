@@ -50,3 +50,17 @@
 .route-bottom{grid-template-columns:1.1fr 1fr}.route-bottom .button.secondary{border-color:#7fb9b4}
 .sheet-back{position:fixed;inset:0;background:rgba(6,16,23,.5);z-index:30}.sheet{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:min(100%,480px);background:#fff;border-radius:22px 22px 0 0;padding:18px 18px calc(22px + env(safe-area-inset-bottom));z-index:31}.sheet .map-visual{margin-top:12px}
 .arrival-bg:before{background:linear-gradient(180deg,#0003 0%,#0000 25%,#0000 70%,#0002 100%)}.arrival-card{top:calc(60px + env(safe-area-inset-top));background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.12)}.arrival-card h1{font-size:23px;font-weight:900}.arrival-card .flag{flex:none}.arrival-note{position:absolute;left:22px;right:22px;bottom:calc(98px + env(safe-area-inset-bottom));background:rgba(20,32,40,.72);color:#fff;font-size:11.5px;line-height:1.5;padding:9px 12px;border-radius:12px}.arrival-panel{background:transparent;padding:0 22px calc(24px + env(safe-area-inset-bottom))}.arrival-panel .button{min-height:60px;font-size:18px}
+
+/* FIT-549 11차: route start button above the fold + bottom bar fixed above the iOS Safari toolbar */
+.rt-start{margin-top:14px;min-height:58px;font-size:18px}
+.route-page~.actions,.actions:has(.route-bottom){position:fixed;left:50%;transform:translateX(-50%);width:min(100%,480px);bottom:0;padding-bottom:calc(18px + env(safe-area-inset-bottom))}
+.route-page{padding-bottom:170px}
+/* FIT-549 11차: large, colored live guide banner on the AR screen */
+.ar-guide{margin-top:12px;padding:14px 18px;border-radius:16px;font-size:19px;font-weight:850;line-height:1.35;text-align:center;word-break:keep-all;color:#fff;background:#0b6e67f2;box-shadow:0 8px 22px rgba(0,0,0,.35);border:2px solid #ffffff40;transition:background .25s,transform .25s}
+.ar-guide::before{content:'ℹ︎ ';}
+.ar-guide[data-tone=go]{background:#0a9d6ef5;border-color:#7ff3c9}
+.ar-guide[data-tone=go]::before{content:'⬆︎ '}
+.ar-guide[data-tone=warn]{background:#e08a00f5;border-color:#ffd27a;color:#1d1300;animation:guidePulse 1.4s ease-in-out infinite alternate}
+.ar-guide[data-tone=warn]::before{content:'⚠︎ '}
+@keyframes guidePulse{to{transform:scale(1.03)}}
+@media(max-height:740px){.ar-guide{margin-top:8px;padding:10px 14px;font-size:17px}}
