@@ -64,3 +64,33 @@
 .ar-guide[data-tone=warn]::before{content:'⚠︎ '}
 @keyframes guidePulse{to{transform:scale(1.03)}}
 @media(max-height:740px){.ar-guide{margin-top:8px;padding:10px 14px;font-size:17px}}
+
+/* FIT-549 12차: one-screen layouts on iPhone Safari (bottom bar fixed above the floating toolbar) */
+.actions{position:fixed;left:50%;transform:translateX(-50%);width:min(100%,480px);bottom:0;padding-bottom:calc(16px + env(safe-area-inset-bottom))}
+.page{padding-bottom:150px}
+.loc-page h1{font-size:27px;line-height:1.25;margin-top:4px}
+.loc-page .subtext{margin-top:6px}
+.loc-page .loc-card{padding:12px 14px;margin-top:12px}
+.loc-page .loc-card strong{font-size:17px}
+.loc-page .loc-icon{height:44px;width:44px;font-size:22px}
+.loc-page .map-card{padding:12px 14px;margin-top:10px}
+.loc-page .map-visual{height:min(30vh,215px);margin-top:8px}
+.loc-page .map-card .subtext{font-size:12px;margin-top:6px}
+.route-page .rt-card{padding-top:4px;padding-bottom:4px}
+.route-page .steps{margin-top:8px}
+.route-page .step{grid-template-columns:28px 92px minmax(0,1fr);gap:10px;padding:7px 0}
+.step-ph{position:relative;display:block;height:60px;width:92px}
+.step-ph img,.route-page .step img{height:60px;width:92px;border-radius:10px;object-fit:cover;display:block}
+.step-arr{position:absolute;left:50%;bottom:5px;transform:translateX(-50%);height:24px;width:24px;border-radius:50%;background:#0b8f86e6;box-shadow:0 0 0 2px #ffffffcc,0 2px 6px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center}
+.route-page .step strong{font-size:14px;line-height:1.35}
+.route-page{padding-bottom:140px}
+.route-page>.note{display:none}
+.route-page .rt-row{padding:6px 4px;grid-template-columns:38px 1fr auto}
+.route-page .rt-ic{height:38px;width:38px}
+.route-page .rt-metrics2{margin-top:8px}
+.route-page .rt-metrics2>div{padding-top:8px;padding-bottom:8px}
+.step-arr{left:auto;right:5px;bottom:5px;transform:none;height:20px;width:20px;background:#0b8f86c7;box-shadow:0 0 0 1.5px #ffffffb3,0 1px 4px rgba(0,0,0,.3)}
+.step-arr svg{width:13px;height:13px}
+.loc-page .room{height:21%}
+.loc-page .mapline{height:18%}
+.loc-page .loc-card strong{font-size:16px;line-height:1.3}
