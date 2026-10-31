@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "command": "python3 .cursor/hooks/boot-gate.py",
+        "failClosed": true,
+        "matcher": "Write|StrReplace|Delete|EditNotebook|Edit|ApplyPatch|MultiEdit"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "python3 .cursor/hooks/boot-gate.py",
+        "failClosed": true
+      }
+    ],
+    "beforeReadFile": [
+      {
+        "command": "python3 .cursor/hooks/boot-gate.py"
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "python3 .cursor/hooks/boot-gate.py"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "python3 .cursor/hooks/boot-gate.py",
+        "matcher": "Read|Shell"
+      }
+    ]
+  }
+}
